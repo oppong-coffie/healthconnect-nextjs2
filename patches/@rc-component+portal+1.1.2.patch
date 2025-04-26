@@ -1,0 +1,13 @@
+diff --git a/node_modules/@rc-component/portal/es/Portal.js b/node_modules/@rc-component/portal/es/Portal.js
+index b4a99eb..dc977a7 100644
+--- a/node_modules/@rc-component/portal/es/Portal.js
++++ b/node_modules/@rc-component/portal/es/Portal.js
+@@ -61,7 +61,7 @@ var Portal = /*#__PURE__*/React.forwardRef(function (props, ref) {
+ 
+     // Tell component that we check this in effect which is safe to be `null`
+     setInnerContainer(customizeContainer !== null && customizeContainer !== void 0 ? customizeContainer : null);
+-  });
++  }, [getContainer]);
+   var _useDom = useDom(mergedRender && !innerContainer, debug),
+     _useDom2 = _slicedToArray(_useDom, 2),
+     defaultContainer = _useDom2[0],
