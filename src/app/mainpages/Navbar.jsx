@@ -41,19 +41,19 @@ const company = [
 const services = [
   {
     label: "🏥 Hospital",
-    link: "/hospital",
+    page: "hospitalmanagement",
     description:
       "Comprehensive in-patient and out-patient care for all health needs.",
   },
   {
     label: "💊 Pharmacy",
-    link: "/pharmacy",
+    page: "pharmacy",
     description:
       "A wide range of prescription medicines, wellness products, and expert advice.",
   },
   {
     label: "🚑 Transport",
-    link: "/transport",
+    page: "transport",
     description:
       "Reliable medical transport and emergency response services 24/7.",
   },
@@ -168,7 +168,11 @@ const Navbar = ({ onNavigate }) => {
               onMouseLeave={() => handleHover(null)}
             >
               {services.map((item, index) => (
-                <Link href={item.link} key={index}>
+                    <Link
+                    href={`/mainpages/products/${item.page}`}
+                    key={index}
+                    onClick={() => setOpenMenu(null)}
+                  > 
                   <div className="group p-5 bg-white rounded-2xl shadow hover:shadow-md hover:scale-[1.03] transition-all duration-300 border border-gray-200 cursor-pointer">
                     <h4 className="text-lg font-semibold text-green-800 group-hover:text-green-900">
                       {item.label}
