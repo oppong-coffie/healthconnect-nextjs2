@@ -11,21 +11,21 @@ const page = () => {
         height={500}
         className="w-full h-full absolute"
       />
-      <div className="relative left-0 top-0 bg-black opacity-70 h-[100vh] w-full text-center  text-white py-500">
-        <div className=' text-white px-80'>
-        <p className='text-5xl font-bold p-10 pt-40 opacity-100 '>We can get your Drug Prescriptions to You</p>
-        <p className='px-20 '>
+      <div className="relative left-0 top-0 bg-black opacity-70 h-[100vh] w-full text-center  text-white ">
+        <div className=' text-white  lg:px-80'>
+        <p className='md:text-5xl text-lg font-bold p-10 lg:pt-40 opacity-100 '>We can get your Drug Prescriptions to You</p>
+        <p className='md:px-20 px-2 '>
           We have all the drugs your doctor prescribed for your health and what's more, we can get it to you. With our collaboration with various hospitals, we have a deck of pharmacies with all your drug requirement.
         </p>
-        <div className='flex gap-0 my-20 mx-40'>
-          <input type='text' placeholder='🔍  Search for drugs in here' className='py-3 px-5 text-xl text-black rounded-l-xl'/> 
+        <div className='flex gap-0 my-20 md:mx-40'>
+          <input type='text' placeholder='🔍  Search for drugs in here' className='md:py-3 py-1 ml-5 md:px-5 px-2 text-md md:text-xl text-black rounded-l-xl'/> 
           <button className='bg-green-400 rounded-r-xl '>Find drug</button>
         </div>
         </div>
       </div>
-      <div className='px-20'>
-      <div className='p-5 items-center text-xl flex gap-10'>
-         <div className='p-20'>
+      <div className='lg:px-20 px-5'>
+      <div className='p-5 items-center md:text-xl block md:flex gap-10'>
+         <div className='lg:p-20'>
         <p className='font-bold  text-blue-400'>
           All your Medicine needs in one place
         </p>
@@ -35,10 +35,10 @@ const page = () => {
           <li className='p-2'>Get notified when your drug is available</li>
         </ul>
       </div>
-      <Image src='/images/pharmacy/drugshelf.png' alt='all-in-one' width={500} height={500} />
+      <Image src='/images/pharmacy/drugshelf.png' alt='all-in-one' width={500} height={500}  />
       </div>
-       <div className='p-5 items-center text-xl flex flex-row-reverse gap-20'>
-         <div className='p-20' >
+       <div className='p-5 items-center md:text-xl block md:flex flex-row-reverse gap-20'>
+         <div className='lg:p-20' >
         <p className='font-bold  text-blue-400  '>
           Get your drugs at your doorstep
         </p>
@@ -48,10 +48,10 @@ const page = () => {
           <li className='p-2'>We guarantee rapid response</li>
         </ul>
       </div>
-      <Image src='/images/pharmacy/delivery.png' alt='all-in-one' width={500} height={500}/>
+      <Image src='/images/pharmacy/delivery.png' alt='all-in-one' width={300} height={300} />
       </div>
-      <div className='p-10 items-center text-xl flex gap-10 '>
-         <div className=' px-20'>
+      <div className='p-10 items-center md:text-xl block md:flex gap-10 '>
+         <div className=' lg:px-20'>
         <p className='font-bold  text-blue-400 '>
           Get started and join the family
         </p>
@@ -61,7 +61,7 @@ const page = () => {
           <li className='p-2'>Get notified when your drug is available</li>
         </ul>
       </div>
-      <Image src='/images/pharmacy/join.png' alt='all-in-one' width={500} height={500}/>
+      <Image src='/images/pharmacy/join.png' alt='all-in-one' width={500} height={500}  />
       </div>
      </div>
     </div>
